@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csscues.css">
+    <title>Contacto</title>
+    <header>
+        <h1>Por favor llena este formulario para ponerte en contacto con nosotros</h1>
+    </header>
+</head>
+<body>
+    <section>
+        <center>
+            <fieldset> 
+                <legend><h1>Contacto</h1></legend>
+                <form name="contact">
+                    <label for="name"><b>Nombre</b></label>
+                    <br />
+                    <input type="text"  id="name" name="name" placeholder="Ponga su nombre" required pattern="[a-zA-z    ]+" minlength="2" maxlength="24" />
+                    <br />
+                    <label for="last_name"><b>Apellido</b></label> 
+                    <br>
+                    <input type="text" id="last_name" name="last_name" placeholder="Ponga su apellido" required pattern="[a-zA-z    ]+" minlength="2" maxlength="24" />
+                    <br />
+                    <label for="email"><b>Correo</b></label>
+                    <br />
+                    <input type="email" id="email" name="email" placeholder="Digite su email" required />
+                    <br />
+                    <label for="number_phone"><b>Numero de telefono</b></label>
+                    <br />
+                    <input type="number" id="number_phone" name="number_phone" placeholder="Ponga su numero" required pattern="[1-9 ]+" minlength="6" maxlength="12" />
+                    <br />
+                    <label for="comments"><b>Comentario</b></label>
+                    <br />
+                    <textarea placeholder="Razon por la cual quiere contactar" required minlength="5" maxlength="500"></textarea>
+                    <br />
+                    <br />
+                    <button>Enviar</button>
+                </form>
+            </fieldset>
+        </center>
+    </section>
+    <footer>
+        <p>Copyright</p>
+    </footer>
+</body> 
+</html>
